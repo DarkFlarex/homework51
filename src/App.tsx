@@ -25,8 +25,9 @@ const App = () => {
         const numbers: number[] = [];
         while (numbers.length < 5) {
             const randomNumber = Math.floor(Math.random() * 32) + 5;
+            if (!numbers.includes(randomNumber)) {
                 numbers.push(randomNumber);
-
+            }
         }
         const sortedNumbers = numbers.sort((a, b) => a - b);
         return {
