@@ -1,0 +1,18 @@
+.number-all{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.number-lot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: #C1E8FF;
+    color: #021024;
+    font-size: 36px;
+}
