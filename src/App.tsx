@@ -25,14 +25,16 @@ const App = () => {
         const numbers: number[] = [];
         while (numbers.length < 5) {
             const randomNumber = Math.floor(Math.random() * 32) + 5;
-            numbers.push(randomNumber);
+                numbers.push(randomNumber);
+
         }
+        const sortedNumbers = numbers.sort((a, b) => a - b);
         return {
-            numberFirstLot: numbers[0],
-            numberSecondLot: numbers[1],
-            numberThirdLot: numbers[2],
-            numberFourthLot: numbers[3],
-            numberFifthLot: numbers[4]
+            numberFirstLot: sortedNumbers[0],
+            numberSecondLot: sortedNumbers[1],
+            numberThirdLot: sortedNumbers[2],
+            numberFourthLot: sortedNumbers[3],
+            numberFifthLot: sortedNumbers[4]
         };
     };
 
